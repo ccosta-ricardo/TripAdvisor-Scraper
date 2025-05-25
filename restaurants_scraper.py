@@ -66,7 +66,7 @@ async def main():
         page = await context.new_page()
 
         output_filename = 'tripadvisor_reviews.csv'
-        with open('scraper_tripadvisor/porto_rest_ids.txt', 'r', encoding='utf-8') as file:
+        with open('porto_rest_ids.txt', 'r', encoding='utf-8') as file:
             restaurant_ids = [line.strip() for line in file if line.strip()]
 
         count = 0
